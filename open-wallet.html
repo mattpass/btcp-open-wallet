@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>BTCP Open Wallet</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="en-us">
+<meta name="author" content="Bitcoin Private">
+<meta name="copyright" content="&copy; 2018 Bitcoin Private">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="/open-wallet.css?unique=<?php echo microtime(true);?>">
+<script src="/open-wallet.js?unique=<?php echo microtime(true);?>"></script>
+</head>
+
+<body>
+
+<div class="main">
+	<div class="center">
+
+		<div class="header">
+            <div class="circle redBG"></div><div class="circle yellowBG"></div><div class="circle greenBG"></div>
+		</div>
+
+		<div class="nav">
+            <div class="logoBlock whiteFadeBG">
+                <img src="/open-wallet-images/bitcoin-private.svg" alt="Bitcoin Private">
+            </div>
+            <div class="balanceBlock">
+                <div class="availableBalanceText">Available Balance</div>
+                <div class="availableBalanceAmount">123.12345678</div><div class="availableBalanceUnit">BTCP</div>
+            </div>
+            <div class="optionsBlock">
+                <div class="whiteFadeBG"><div class="send">Send</div></div>
+                <div class="whiteFadeBG"><div class="receive">Receive</div></div>
+                <div class="whiteFadeBG"><div class="address">Address</div></div>
+            </div>
+            <div class="settingsBlock">
+                <div class="whiteFadeBG"><div class="settings">Settings</div></div>
+            </div>
+            <div class="syncingBlock">
+                <div class="syncing">Syncing blockchain (56%)...</div>
+                <div class="progress">
+                    <div class="bar"></div>
+                </div>
+            </div>
+		</div>
+
+		<div class="content">
+            <div class="heading">
+                Transactions
+                <div class="notifications">
+                    <div class="indicator"></div>
+                    Notifications
+                </div>
+                <div class="options">
+                    <div class="option">All</div>
+                    <div class="option optionNoBG">Sent</div>
+                    <div class="option optionNoBG">Received</div>
+                    <div class="option optionNoBG">Pending</div>
+                    <div class="option optionNoBG">Issued</div>
+                </div>
+            </div>
+            <div class="transactions">
+                <div class="transaction">
+                    <div class="date">
+                        <div class="month">Jun</div>
+                        <div class="number">12</div>
+                    </div>
+                    <div class="icon">
+                        <img src="/open-wallet-images/icons/update.svg" alt="Updating..." style="margin-top: 6px; width: 26px">
+                    </div>
+                    <div class="info">
+                        <div class="directionTypeText">Sending to transparent address</div>
+                        <div class="address">b1r498h498h3f4309rfh459gh5hg98gh5894h</div>
+                    </div>
+                    <div class="transfer">
+                        <div class="amountBTCP">-0.2448764 BTCP</div>
+                        <div class="amountUSD">-$20.17 USD</div>
+                    </div>
+                </div>
+               <div class="transaction">
+                    <div class="date">
+                        <div class="month">Jun</div>
+                        <div class="number">07</div>
+                    </div>
+                   <div class="icon">
+                       <img src="/open-wallet-images/icons/sent.svg" alt="Sent">
+                   </div>
+                   <div class="info">
+                       <div class="directionTypeText">Sent to encrypted address</div>
+                       <div class="address">z198n4f9fh4fh4fh40hf404jf03j9d49f8hg89h49h948h4893ht49ht984ht49t4h89</div>
+                   </div>
+                   <div class="transfer">
+                       <div class="amountBTCP">-0.1223564 BTCP</div>
+                       <div class="amountUSD">-$10.34 USD</div>
+                   </div>
+                </div>
+                <div class="transaction">
+                    <div class="date">
+                        <div class="month">Jun</div>
+                        <div class="number">05</div>
+                    </div>
+                    <div class="icon">
+                        <img src="/open-wallet-images/icons/received.svg" alt="Received">
+                    </div>
+                    <div class="info">
+                        <div class="directionTypeText">Received from transparent address</div>
+                        <div class="address">b1f4f09h30f4hg5o873dlspjn30dfh4f84h43417</div>
+                    </div>
+                    <div class="transfer">
+                        <div class="amountBTCP">0.37338344 BTCP</div>
+                        <div class="amountUSD">$35.99 USD</div>
+                    </div>
+                </div>
+                <div class="transaction">
+                    <div class="date">
+                        <div class="month">May</div>
+                        <div class="number">30</div>
+                    </div>
+                    <div class="icon">
+                        <img src="/open-wallet-images/icons/send-error.svg" alt="Send Error!" style="margin-top: 6px">
+                    </div>
+                    <div class="info">
+                        <div class="directionTypeText" style="color: #b00">Send error to transparent address</div>
+                        <div class="address" style="color: #b00">b140dj04jf48h4f789h3d043hf89hg498gh9h834</div>
+                    </div>
+                    <div class="transfer">
+                        <div class="amountBTCP" style="color: #b00">-0.5659874BTCP</div>
+                        <div class="amountUSD" style="color: #b00">-$52.00 USD</div>
+                    </div>
+                </div>
+               <div class="transaction">
+                    <div class="date">
+                        <div class="month">May</div>
+                        <div class="number">27</div>
+                    </div>
+                   <div class="icon">
+                       <img src="/open-wallet-images/icons/received.svg" alt="Received">
+                   </div>
+                   <div class="info">
+                       <div class="directionTypeText">Received from transparent address</div>
+                       <div class="address">b1r43498h494h9f4h98h4pd0h03xn0324f3903</div>
+                   </div>
+                   <div class="transfer">
+                       <div class="amountBTCP">0.08379846 BTCP</div>
+                       <div class="amountUSD">$7.99 USD</div>
+                   </div>
+                </div>
+                <div class="transaction">
+                    <div class="date">
+                        <div class="month">May</div>
+                        <div class="number">26</div>
+                    </div>
+                    <div class="icon">
+                        <img src="/open-wallet-images/icons/sent.svg" alt="Sent">
+                    </div>
+                    <div class="info">
+                        <div class="directionTypeText">Sent to transparent address</div>
+                        <div class="address">b14rf984h394f798gd9r3439g349fg48fg498g</div>
+                    </div>
+                    <div class="transfer">
+                        <div class="amountBTCP">-0.40000000 BTCP</div>
+                        <div class="amountUSD">-$75.64 USD</div>
+                    </div>
+                </div>
+                <div class="transaction">
+                    <div class="date">
+                        <div class="month">May</div>
+                        <div class="number">24</div>
+                    </div>
+                    <div class="icon">
+                        <img src="/open-wallet-images/icons/received.svg" alt="Received">
+                    </div>
+                    <div class="info">
+                        <div class="directionTypeText">Received from transparent address</div>
+                        <div class="address">b1r43498h494h9f4h98h4pd0h03xn0324f3903</div>
+                    </div>
+                    <div class="transfer">
+                        <div class="amountBTCP">2.8746874 BTCP</div>
+                        <div class="amountUSD">$219.87 USD</div>
+                    </div>
+                </div>
+               <div class="transaction">
+                    <div class="date">
+                        <div class="month">May</div>
+                        <div class="number">20</div>
+                    </div>
+                   <div class="icon">
+                       <img src="/open-wallet-images/icons/received.svg" alt="Received">
+                   </div>
+                   <div class="info">
+                       <div class="directionTypeText">Received from encrypted address</div>
+                       <div class="address">z138n4f9fh4fhf43f498fh439g8h45g9h489gh9h498h03hrr98d23dh90h949t4h89</div>
+                   </div>
+                   <div class="transfer">
+                       <div class="amountBTCP">0.97434987 BTCP</div>
+                       <div class="amountUSD">$89.90 USD</div>
+                   </div>
+                </div>
+                <div class="transaction">
+                    <div class="date">
+                        <div class="month">May</div>
+                        <div class="number">18</div>
+                    </div>
+                    <div class="icon">
+                        <img src="/open-wallet-images/icons/sent.svg" alt="Sent">
+                    </div>
+                    <div class="info">
+                        <div class="directionTypeText">Sent to encrypted address</div>
+                        <div class="address">z198n4f9fh4fh4fh40hf404jf03j9d49f8hg89h49h948h4893ht49ht984ht49t4h89</div>
+                    </div>
+                    <div class="transfer">
+                        <div class="amountBTCP">-1.24487446 BTCP</div>
+                        <div class="amountUSD">-$126.37 USD</div>
+                    </div>
+                </div>
+            </div>
+		</div>
+
+		<div class="footer">
+            <img src="/open-wallet-images/icons/update.svg" alt="Update" style="margin-top: 6px">
+		</div>
+
+	</div>
+</div>
+
+</body>
+
+</html>

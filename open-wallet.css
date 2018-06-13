@@ -1,0 +1,108 @@
+/* Resets */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	font-family: Arial, Helvetica, Verdana;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-size: 14px;
+	vertical-align: top;
+}
+
+/* Box sizing */
+* {-moz-box-sizing: border-box; box-sizing: border-box}
+
+/* Scrollbar */
+::-webkit-scrollbar {width: 10px}
+::-webkit-scrollbar-track {background: #fff}
+::-webkit-scrollbar-thumb {background: #888}
+::-webkit-scrollbar-thumb:hover {background: #3b4284}
+
+/* General */
+html, body {background: #888}
+p	{color: #444; padding-bottom: 14px}
+h1	{font-size: 32px; color: #888}
+h2	{font-size: 16px; color: #888}
+a	{color: #f80; text-decoration: none}
+a:hover	{text-decoration: underline}
+
+/* Common */
+.red	 {color: #ff6059}
+.redBG	 {background: #ff6059}
+.yellow	 {color: #ffbd2e}
+.yellowBG {background: #ffbd2e}
+.green	 {color: #28ca42}
+.greenBG {background: #28ca42}
+.whiteFadeBG {background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255,0))}
+
+/* Structure */
+.main	{display: block; width: 100%; margin-top: 50px; text-align: center}
+.center	{position: relative; display: block; min-height: 700px; width: 1240px; margin: 0 auto; background: #fff; text-align: left;
+	box-shadow: 10px 10px 20px 5px rgba(0,0,0,0.4);
+    border-radius: 8px
+}
+
+/* Header */
+.header	{position: absolute; display: inline-block; width: 1240px; padding: 10px; z-index: 1}
+.header .circle {display: inline-block; width: 12px; height: 12px; border-radius: 6px; margin-right: 5px}
+
+/* Nav */
+.nav	{position: absolute; display: inline-block; width: 300px; min-height: 700px; top: 0; border-radius: 8px 0 0 8px; background: linear-gradient(to right, #3b4284, #2d346f)}
+
+.nav .logoBlock {padding: 60px 0 27px 27px; border-radius: 8px 0 0 0; border-bottom: solid 1px #404780}
+.nav .logoBlock img {width: 220px}
+
+.nav .balanceBlock {padding: 17px 27px}
+.nav .balanceBlock .availableBalanceText {font-size: 14px; text-transform: uppercase; color: #8c8fb6}
+.nav .balanceBlock .availableBalanceAmount {display: inline-block; margin-top: 10px; font-size: 28px; color: #fff}
+.nav .balanceBlock .availableBalanceUnit {display: inline-block; font-size: 18px; margin: 19px 0 0 10px; text-transform: uppercase; color: #8c8fb6}
+
+.nav .optionsBlock div {padding: 22px 20px; border-bottom: solid 1px #404780}
+.nav .optionsBlock div div {padding: 0 0 0 45px; border-bottom: none; font-size: 16px; color: #fff}
+.nav .optionsBlock .send {background: url('/open-wallet-images/icons/send.svg') 10px no-repeat}
+.nav .optionsBlock .receive {background: url('/open-wallet-images/icons/receive.svg') 10px no-repeat}
+.nav .optionsBlock .address {background: url('/open-wallet-images/icons/address.svg') 10px no-repeat}
+
+.nav .settingsBlock {position: absolute; bottom: 31px}
+.nav .settingsBlock div {padding: 22px 20px; border-bottom: solid 1px #404780}
+.nav .settingsBlock div div {padding: 0 0 0 40px; border-bottom: none; font-size: 16px; color: #fff}
+.nav .settingsBlock .settings {background: url('/open-wallet-images/icons/settings.svg') 10px no-repeat}
+
+.nav .syncingBlock {position: absolute; display: inline-block; width: 300px; bottom: 0; padding: 8px; border-radius: 0 0 0 8px; background: #222655; color: #fff}
+.nav .syncingBlock .syncing {display: inline-block; margin-left: 22px; font-size: 12px}
+.nav .syncingBlock .progress {position: absolute; display: inline-block; bottom: 13px; right: 22px; height: 6px; width: 80px; border-radius: 3px; background: #394879}
+.nav .syncingBlock .progress .bar {position: absolute; display: inline-block; height: 6px; width: 45px; border-radius: 3px 0 0 3px; background: #509eff}
+
+/* Content */
+.content {position: absolute; left: 300px}
+
+.content .heading {position: relative; display: inline-block; height: 128px; width: 940px; padding: 68px 0 0 22px; border-radius: 0 8px 0 0; border-bottom: solid 1px #eaeaea; font-size: 24px; background: #f3f4f6; color: #222655}
+.content .heading .notifications {position: absolute; top: 10px; right: 22px; font-size: 12px; color: #bbb}
+.content .heading .notifications .indicator {position: absolute; top: 3px; right: 70px; width: 8px; height: 8px; border-radius: 4px; background: #bbb}
+.content .heading .options {position: absolute; display: inline-block; right: 22px; width: 520px; text-align: right}
+.content .heading .options .option {position: relative; display: inline-block; width: 90px; height: 22px; padding: 4px 12px; margin-left: 10px; border-radius: 11px; font-size: 12px; text-transform: uppercase; text-align: center; background: #888; color: #fff}
+.content .heading .options .optionNoBG {background: transparent; color: #888}
+
+.content .transactions {position: relative; height: 541px; border-bottom: solid 1px #eaeaea; overflow-y: scroll}
+.content .transactions .transaction {position: relative; height: 92px; border-bottom: solid 1px #eaeaea; background: #fff}
+.content .transactions .transaction .date {position: relative; display: inline-block; left: 22px; width: 40px; height: 91px; padding-top: 20px; text-align: center}
+.content .transactions .transaction .date .month {text-transform: uppercase; font-size: 18px; color: #222655}
+.content .transactions .transaction .date .number {font-size: 30px; color: #222655}
+.content .transactions .transaction .icon {position: relative; display: inline-block; left: 40px; width: 40px; height: 91px; padding-top: 34px; text-align: center}
+.content .transactions .transaction .info {position: relative; display: inline-block; left: 60px; width: 400px; height: 91px; padding-top: 34px}
+.content .transactions .transaction .info .directionTypeText {font-size: 16px; color: #222655}
+.content .transactions .transaction .info .address {font-size: 14px; color: #aaa}
+.content .transactions .transaction .transfer {position: absolute; display: inline-block; right: 22px; width: 140px; height: 91px; padding-top: 34px; text-align: right}
+.content .transactions .transaction .transfer .amountBTCP {font-size: 16px; font-weight: bold; color: #222655}
+.content .transactions .transaction .transfer .amountUSD {font-size: 14px; color: #aaa}
+
+/* Footer */
+.footer	{position: absolute; bottom: 10px; right: 32px}
